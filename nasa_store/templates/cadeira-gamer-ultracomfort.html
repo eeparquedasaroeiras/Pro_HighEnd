@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProHighEnd - Mouse Gamer RGB</title>
+    <link rel="stylesheet" href="styless.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-area" onclick="window.location.href='index.html'">
+            <img src="img/logo.png" alt="Logo ProHighEnd" class="logo-img">
+            <h1>ProHighEnd</h1>
+        </div>
+        <form id="formPesquisa">
+            <input type="text" id="barraPesquisa" placeholder="Pesquisar produtos...">
+            <div id="suggestions"></div>
+        </form>
+        <div class="header-options">
+            <a href="produtos.html">Produtos</a>
+            <a href="perfil.html">Seu Perfil</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="#">Contato</a>
+        </div>
+    </header>
+
+  <main>
+    <section class="product-detail-container">
+      <div class="product-image-gallery">
+        <img src="img/cadeira1.jpg" alt="Cadeira Gamer UltraComfort" class="main-image" id="mainProductImage">
+        <div class="thumbnail-gallery" id="thumbnailGallery">
+          <img src="img/cadeira1.jpg" alt="Cadeira Gamer UltraComfort - Vista 1" class="thumbnail active-thumb">
+          <img src="img/cadeira2.jpg" alt="Cadeira Gamer UltraComfort - Vista 2" class="thumbnail">
+          <img src="img/cadeira3.jpg" alt="Cadeira Gamer UltraComfort - Vista 3" class="thumbnail">
+        </div>
+      </div>
+      <div class="product-info">
+        <h2>Cadeira Gamer UltraComfort</h2>
+        <p class="price">R$ 1.199,90</p>
+        <p>A Cadeira Gamer UltraComfort foi projetada para oferecer o máximo de ergonomia e conforto durante horas de jogo ou trabalho. Com múltiplos ajustes e material premium, ela cuida da sua postura.</p>
+        <button class="buy-button">Adicionar ao Carrinho</button>
+
+        <div class="tabs-container">
+          <div class="tab-buttons">
+            <button class="tab-button active-tab" data-tab="description">Descrição</button>
+            <button class="tab-button" data-tab="specs">Especificações</button>
+            <button class="tab-button" data-tab="reviews">Avaliações</button>
+          </div>
+          <div id="tabContentDescription" class="tab-content">
+            <p>Invista na sua saúde e performance com a Cadeira Gamer UltraComfort. Desenvolvida para suportar longas sessões, ela possui encosto reclinável até 180°, apoios de braço 4D totalmente ajustáveis e um mecanismo de inclinação multifuncional. As almofadas lombares e de pescoço, ambas removíveis e ajustáveis, oferecem suporte extra onde você mais precisa.</p>
+            <p>Construída com estrutura de aço reforçado e revestida em couro sintético de alta qualidade, esta cadeira garante durabilidade e um toque premium. As rodas de alta resistência permitem movimentação suave em qualquer superfície.</p>
+          </div>
+          <div id="tabContentSpecs" class="tab-content">
+            <ul>
+              <li>**Material:** Couro sintético PU de alta qualidade</li>
+              <li>**Estrutura:** Aço reforçado</li>
+              <li>**Ajustes:** Altura do assento (pistão a gás Classe 4), inclinação do encosto (90-180°), apoios de braço 4D (altura, profundidade, ângulo, lateral)</li>
+              <li>**Mecanismo:** Multifuncional (tilt e rocking)</li>
+              <li>**Rodas:** 60mm de nylon de alta resistência</li>
+              <li>**Suporte:** Almofadas lombares e de pescoço removíveis</li>
+              <li>**Peso máximo suportado:** 150kg</li>
+              <li>**Garantia:** 1 ano (estrutura)</li>
+            </ul>
+          </div>
+          <div id="tabContentReviews" class="tab-content">
+            <div class="review-item">
+              <h4>Gustavo C. - ⭐⭐⭐⭐⭐</h4>
+              <p>Simplesmente a melhor cadeira! Meu problema de coluna diminuiu muito desde que comecei a usá-la. É robusta, confortável e tem todos os ajustes que preciso.</p>
+            </div>
+            <div class="review-item">
+              <h4>Beatriz M. - ⭐⭐⭐⭐⭐</h4>
+              <p>Confortável e linda, vale cada centavo. Passava horas sentada em cadeiras ruins e agora sinto a diferença. O material é de alta qualidade.</p>
+            </div>
+            <div class="review-item">
+              <h4>Thiago P. - ⭐⭐⭐⭐</h4>
+              <p>Muito boa cadeira, só achei a montagem um pouco demorada, mas o resultado final compensa. Super ergonômica.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <embed class="rodape" src="rodape.html" ></embed>
+  <script src="script.js"></script>
+</body>
+</html>

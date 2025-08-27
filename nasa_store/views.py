@@ -7,7 +7,7 @@ from .models import Produto, PedidoItem, Pedido
 
 def index(request):
     latest_question_list = Produto.objects.all()
-    template = loader.get_template("produto/index.html")
+    template = loader.get_template("index.html")
     context = {
         "latest_question_list": latest_question_list,
     }

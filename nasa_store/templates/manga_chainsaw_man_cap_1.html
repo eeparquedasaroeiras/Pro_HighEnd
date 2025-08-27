@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProHighEnd - Mouse Gamer RGB</title>
+    <link rel="stylesheet" href="styless.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-area" onclick="window.location.href='index.html'">
+            <img src="img/logo.png" alt="Logo ProHighEnd" class="logo-img">
+            <h1>ProHighEnd</h1>
+        </div>
+        <form id="formPesquisa">
+            <input type="text" id="barraPesquisa" placeholder="Pesquisar produtos...">
+            <div id="suggestions"></div>
+        </form>
+        <div class="header-options">
+            <a href="produtos.html">Produtos</a>
+            <a href="perfil.html">Seu Perfil</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="#">Contato</a>
+        </div>
+    </header>
+    <main>
+        <section class="product-detail-container"> <div class="product-image-gallery">
+                <img id="mainProductImage" src="img/manga-chainsaw-man-1.jpg" alt="Capa do Manga Chainsaw Man (Capítulo 1)" class="main-image">
+                <div id="thumbnailGallery" class="thumbnail-gallery">
+                    </div>
+            </div>
+            <div class="product-info">
+                <h2>Manga Chainsaw Man - Capítulo 1</h2>
+                <p class="price">R$ 25,00</p>
+                <p>Mergulhe no universo sombrio e cheio de ação de Chainsaw Man com o seu primeiro capítulo! Conheça Denji, um jovem endividado que, após um evento trágico, se une a Pochita, o Demônio da Motosserra, para se tornar um caçador de demônios.</p>
+                <button class="buy-button">Comprar</button> <div class="tabs-container">
+                    <div class="tab-buttons">
+                        <button class="tab-button active-tab" data-tab="description">Descrição</button>
+                        <button class="tab-button" data-tab="specs">Especificações</button>
+                        <button class="tab-button" data-tab="reviews">Avaliações</button>
+                    </div>
+                    <div id="tabContentDescription" class="tab-content" style="display: block;">
+                        <p>A história de **Chainsaw Man** começa com Denji, um jovem que herdou as dívidas de seu pai e vive uma vida miserável. Ele é forçado a trabalhar como caçador de demônios para a Yakuza, acompanhado por seu parceiro, o demônio motosserra Pochita. Após uma traição brutal, Denji e Pochita se fundem, dando origem ao Chainsaw Man, um ser capaz de se transformar em um demônio com motosserras nos braços e cabeça.</p>
+                        <p>Este volume marca o início da jornada caótica de Denji e sua luta para sobreviver e, quem sabe, realizar seus sonhos mais simples!</p>
+                        <p>Você pode ler o Capítulo 1 de Chainsaw Man nos links oficiais abaixo:</p>
+                        <ul>
+                            <li><a href="https://www.viz.com/shonenjump/chapters/chainsaw-man" target="_blank">Leia no VIZ Media (Shonen Jump Oficial)</a></li>
+                            <li><a href="https://mangaplus.shueisha.co.jp/titles/100037" target="_blank">Leia no MANGA Plus by Shueisha</a></li>
+                        </ul>
+                    </div>
+                    <div id="tabContentSpecs" class="tab-content">
+                        </div>
+                    <div id="tabContentReviews" class="tab-content">
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <embed class="rodape" src="rodape.html" ></embed>
+    <script src="script.js"></script>
+</body>
+</html>
