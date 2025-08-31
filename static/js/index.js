@@ -99,13 +99,6 @@
     }
   });
 
-
-  imagem.addEventListener("click", function () {
-  window.location.href = "index.html";
-  });
-  
-
-
 let MeuCarr = document.getElementById("MeuCarr")
 let Carrinho = document.getElementById("carrinho")
 
