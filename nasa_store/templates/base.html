@@ -24,8 +24,8 @@
             <div id="suggestions"></div>
         </form>
         <div class="header-options">
-            <a href="produtos.html">Produtos</a>
-            <a href="perfil.html">Seu Perfil</a>
+            <a href="produtos">Produtos</a>
+            <a href="perfil">Seu Perfil</a>
             <a href="#">Vender</a>
             <a href="#">Carrinho</a>
         <div id="MeuCarr" class="MyCarr">
@@ -37,12 +37,8 @@
 
         </div>
     </header>
-
-    <main>
-        {% block content %}{% endblock %}
-    </main>
+    {% block content %}{% endblock %}
     {% include "rodape.html" %}
-    <script src="{% static 'js/index.js' %}"></script>
-    <script src="{% static 'js/outro.js' %}"></script>
+    {% block script %}{% endblock %}
 </body>
 </html>

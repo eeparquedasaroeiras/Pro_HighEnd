@@ -1,32 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProHighEnd - Seu Perfil</title>
-    <link rel="stylesheet" href="perfil.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/logo.png" type="image/png">
-</head>
-<body>
+{% extends "base.html" %}
+{% load static %}
 
-    <header>
-        <div class="logo-area">
-            <img id="imagem-produto" src="img/logo.png" alt="Logo ProHighEnd" class="logo-img">
-            <h1>ProHighEnd</h1>
-        </div>
-        <forma id="formPesquisa">
-            <input type="text" id="barraPesquisa" placeholder="Pesquisar produtos...">
-            <div id="suggestions"></div>
-        </forma>
-        <div class="header-options">
-            <a href="produtos.html">Produtos</a>
-            <a href="perfil.html">Seu Perfil</a> <a href="#">Carrinho</a>
-            <a href="#">Contato</a>
-        </div>
-    </header>
-
-  
+{% block content %}
 <main class="login">
     <div class="container" id="container">
             <form>
@@ -36,7 +11,7 @@
             </form>
     </div>
 </main>
-<embed class="rodape" src="rodape.html" ></embed>
-<script src="perfil.js"></script>
-</body>
-</html>
+{% endblock %}
+{% block script %}
+<script src="{% static 'js/perfil.js' %}"></script>
+{% endblock %}
