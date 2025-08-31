@@ -1,62 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProHighEnd - Tecnologia de Ponta para Gamers</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="img/logo.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="area-fantasma">
-         <img id="icone" class="icone" src="img/icons8-avatar-24.png">
-         <img id="carrinho" class="carr" src="img/carrinho.png"  width="40">
+{% extends "base.html" %}
+
+{% block content %}
+<section id="hero">
+    <h2>Bem-vindo à ProHighEnd!</h2>
+    <p>Sua fonte de tecnologia de ponta para elevar sua experiência gamer.</p>
+    <a href="produtos.html" class="button-hero">Explorar Produtos</a>
+    <a href="categorias.html" class="button-hero">O que voce procura ?</a>
+</section>
+
+<section class="featured-products">
+    <h2>Produtos em Destaque</h2>
+    <div class="product-grid" id="featuredProductsContainer">
     </div>
-    <header>
-        <div class="logo-area">
-            <img  id="imagem-produto" src="img/logo.png" alt="Logo ProHighEnd" class="logo-img">
-            <h1>ProHighEnd</h1>
-        </div>
-        <form id="formPesquisa">
-            <input type="text" id="barraPesquisa" placeholder="Buscar produtos...">
-            <div id="suggestions"></div>
-        </form>
-        <div class="header-options">
-            <a href="produtos.html">Produtos</a>
-            <a href="perfil.html">Seu Perfil</a>
-            <a href="#">Vender</a>
-            <a href="#">Carrinho</a>
-        <div id="MeuCarr" class="MyCarr">
-        <div class="carrinho-aliem">
-            <p class="carr">meu carrinho</p>
-            <button id="BTfechar" type="button">fechar</button>
-        </div>  
-        </div>
-
-        </div>
-    </header>
-
-    <main>
-        <section id="hero">
-            <h2>Bem-vindo à ProHighEnd!</h2>
-            <p>Sua fonte de tecnologia de ponta para elevar sua experiência gamer.</p>
-            <a href="produtos.html" class="button-hero">Explorar Produtos</a>
-            <a href="categorias.html" class="button-hero">O que voce procura ?</a>
-        </section>
-
-        <section class="featured-products">
-            <h2>Produtos em Destaque</h2>
-            <div class="product-grid" id="featuredProductsContainer">
-            </div>
-        </section>
-    </main>
-    <embed class="rodape" src="rodape.html" ></embed>
-    <script src="index.js"></script>
-    <script src="outro.js"></script>
-    <img src="" ></img>
-
-
-
-</body>
-</html>
+</section>
+{% endblock %}
