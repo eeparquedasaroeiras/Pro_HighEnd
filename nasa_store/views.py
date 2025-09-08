@@ -4,6 +4,10 @@ from django.template import loader
 
 from .models import Produto, PedidoItem, Pedido
 
+def login_view(request):
+    template = loader.get_template("login.html")
+    context = {}
+    return HttpResponse(template.render(context, request))
 
 def index(request):
     latest_question_list = Produto.objects.all()

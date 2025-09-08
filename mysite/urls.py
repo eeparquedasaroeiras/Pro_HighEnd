@@ -22,6 +22,7 @@ from nasa_store import views
 
 app_name = "loja"
 urlpatterns = [
+    path('', views.login_view, name='login'),
     path('', views.index, name='index'),
     path('perfil', views.perfil, name='perfil'),
     path('produtos', views.produtos, name='produtos'),
