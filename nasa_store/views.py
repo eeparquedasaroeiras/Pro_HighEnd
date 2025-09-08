@@ -18,6 +18,11 @@ def perfil(request):
     context = {}
     return HttpResponse(template.render(context, request))
 
+def produtos(request):
+    template = loader.get_template("produtos.html")
+    context = {}
+    return HttpResponse(template.render(context, request))
+
 def detalhes(request, id):
     latest_question_list = Produto.objects.get(pk=id)
     template = loader.get_template("produto/details.html")
