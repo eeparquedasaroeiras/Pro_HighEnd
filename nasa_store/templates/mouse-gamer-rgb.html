@@ -1,91 +1,69 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProHighEnd - Mouse Gamer RGB</title>
-    <link rel="stylesheet" href="styless.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/logo.png" type="image/png">
-</head>
+{% extends "base.html" %}
+{% load static %}
 
-<body>
-
-    <header>
-        <div class="logo-area" onclick="window.location.href='index.html'">
-            <img src="img/logo.png" alt="Logo ProHighEnd" class="logo-img">
-            <h1>ProHighEnd</h1>
-        </div>
-        <form id="formPesquisa">
-            <input type="text" id="barraPesquisa" placeholder="Pesquisar produtos...">
-            <div id="suggestions"></div>
-        </form>
-        <div class="header-options">
-            <a href="produtos.html">Produtos</a>
-            <a href="perfil.html">Seu Perfil</a>
-            <a href="carrinho.html">Carrinho</a>
-            <a href="#">Contato</a>
-        </div>
-    </header>
-
-    <main>
-        <section class="product-detail-container">
-            <div class="product-image-gallery">
-                <img id="mainProductImage" src="img/mouse1.jpg" alt="Mouse Gamer RGB - Imagem principal" class="main-image">
-                <div id="thumbnailGallery" class="thumbnail-gallery">
-                    <img src="img/mouse1.jpg" alt="Mouse Gamer RGB - Miniatura 1" class="thumbnail active-thumb">
-                    <img src="img/mouse2.jpg" alt="Mouse Gamer RGB - Miniatura 2" class="thumbnail">
-                    <img src="img/mouse3.jpg" alt="Mouse Gamer RGB - Miniatura 3" class="thumbnail">
-                </div>
+{% block content %}
+<main>
+    <section class="product-detail-container">
+        <div class="product-image-gallery">
+            <img id="mainProductImage" src="https://http2.mlstatic.com/D_NQ_NP_606930-MLU54977214845_042023-O.webp" alt="Mouse Gamer RGB 16000 DPI 7 Botões Programáveis XTech - Imagem principal" class="main-image">
+            <div id="thumbnailGallery" class="thumbnail-gallery">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_606930-MLU54977214845_042023-O.webp" alt="Miniatura 1" class="thumbnail active-thumb">
+                <img src="{% static 'img/mouse-xtech2.jpg' %}" alt="Miniatura 2" class="thumbnail">
+                <img src="{% static 'img/mouse-xtech3.jpg' %}" alt="Miniatura 3" class="thumbnail">
             </div>
-            <div class="product-info">
-                <h2>Mouse Gamer RGB</h2>
-                <p class="price">R$ 199,90</p>
-                <p>Descubra a precisão e o conforto do nosso Mouse Gamer RGB. Com sensor óptico de alta performance e iluminação personalizável, este mouse é ideal para suas sessões de jogo mais intensas. Design ergonômico para horas de uso sem fadiga.</p>
-                <button class="buy-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-info">
+            <h2>Mouse Gamer RGB 16000 DPI 7 Botões Programáveis XTech</h2>
+            <p class="price">R$ 199,90</p>
+            <p>Alto desempenho com iluminação RGB, sensor preciso e personalização via software. Ideal para jogos de FPS e MOBA.</p>
+            <button class="buy-button">Adicionar ao Carrinho</button>
 
-                <div class="tabs-container">
-                    <div class="tab-buttons">
-                        <button class="tab-button active-tab" data-tab="description">Descrição</button>
-                        <button class="tab-button" data-tab="specs">Especificações</button>
-                        <button class="tab-button" data-tab="reviews">Avaliações</button>
+            <div class="tabs-container">
+                <div class="tab-buttons">
+                    <button class="tab-button active-tab" data-tab="description">Descrição</button>
+                    <button class="tab-button" data-tab="specs">Especificações</button>
+                    <button class="tab-button" data-tab="reviews">Avaliações</button>
+                </div>
+
+                <div id="tabContentDescription" class="tab-content active-content">
+                    <h3>Sobre o Mouse Gamer XTech</h3>
+                    <p>Com sensor de alta precisão e sete botões programáveis, este mouse RGB oferece customização completa para jogadores exigentes. Iluminação personalizável em múltiplas cores e software intuitivo para configuração.</p>
+                    <p><strong>Conteúdo da embalagem:</strong> Mouse Gamer RGB XTech, cabo USB, manual do usuário.</p>
+                </div>
+
+                <div id="tabContentSpecs" class="tab-content">
+                    <h3>Especificações Técnicas</h3>
+                    <ul>
+                        <li><strong>Sensor:</strong> Óptico, até 16.000 DPI</li>
+                        <li><strong>Botões:</strong> 7 programáveis</li>
+                        <li><strong>Iluminação:</strong> RGB personalizável</li>
+                        <li><strong>Cabo:</strong> Trançado de 1.8 metros</li>
+                        <li><strong>Conectividade:</strong> USB 2.0</li>
+                        <li><strong>Compatibilidade:</strong> Windows 7+, macOS, Linux</li>
+                    </ul>
+                </div>
+
+                <div id="tabContentReviews" class="tab-content">
+                    <h3>Avaliações de Clientes</h3>
+                    <div class="review-item">
+                        <h4>Bruna F. - 5 estrelas</h4>
+                        <p>"Muito confortável e o RGB deixa o setup lindo."</p>
                     </div>
-                    <div id="tabContentDescription" class="tab-content active-content">
-                        <h3>Sobre o Mouse Gamer RGB</h3>
-                        <p>O Mouse Gamer RGB Pro é construído para durar, com switches de alta durabilidade e acabamento premium. A iluminação RGB em 16.8 milhões de cores pode ser sincronizada com outros dispositivos compatíveis, criando uma experiência imersiva no seu setup. Seus botões programáveis permitem otimizar suas ações em qualquer jogo.</p>
-                        <p><strong>Conteúdo da embalagem:</strong> Mouse Gamer RGB Pro, Guia Rápido.</p>
+                    <div class="review-item">
+                        <h4>Eduardo S. - 4 estrelas</h4>
+                        <p>"Funciona bem, mas o software poderia melhorar."</p>
                     </div>
-                    <div id="tabContentSpecs" class="tab-content">
-                        <h3>Especificações Técnicas</h3>
-                        <ul>
-                            <li>**Sensor:** Óptico, até 16.000 DPI</li>
-                            <li>**Botões:** 7 botões programáveis</li>
-                            <li>**Iluminação:** RGB personalizável (16.8 milhões de cores)</li>
-                            <li>**Cabo:** Trançado de 1.8m</li>
-                            <li>**Compatibilidade:** Windows 7 ou superior, macOS 10.10 ou superior, Linux</li>
-                            <li>**Conectividade:** USB 2.0</li>
-                        </ul>
-                    </div>
-                    <div id="tabContentReviews" class="tab-content">
-                        <h3>Avaliações de Clientes</h3>
-                        <div class="review-item">
-                            <h4>João S. - 5 estrelas</h4>
-                            <p>"Melhor mouse que já tive! Preciso e bonito, recomendo a todos os gamers. O RGB é fantástico!"</p>
-                        </div>
-                        <div class="review-item">
-                            <h4>Maria C. - 4 estrelas</h4>
-                            <p>"Muito bom, mas o software de personalização poderia ser mais intuitivo. No geral, vale a pena."</p>
-                        </div>
-                        <div class="review-item">
-                            <h4>Pedro A. - 5 estrelas</h4>
-                            <p>"Extremamente confortável e responsivo. A bateria dura muito!"</p>
-                        </div>
+                    <div class="review-item">
+                        <h4>Gustavo M. - 5 estrelas</h4>
+                        <p>"Precisão e desempenho top para jogos competitivos."</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <embed class="rodape" src="rodape.html" ></embed>
-    <script src="script.js"></script>
-</body>
-</html>
+        </div>
+    </section>
+</main>
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}
