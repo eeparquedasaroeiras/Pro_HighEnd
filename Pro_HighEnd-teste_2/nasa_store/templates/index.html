@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<main>
+    <section id="hero">
+        <h2>Bem-vindo à ProHighEnd!</h2>
+        <p>Sua fonte de tecnologia de ponta para elevar sua experiência gamer.</p>
+        <a href="produtos.html" class="button-hero">Explorar Produtos</a>
+        <a href="/categorias" class="button-hero">O que voce procura ?</a>
+    </section>
+
+    <section class="featured-products">
+        <h2>Produtos em Destaque</h2>
+        <div class="product-grid" id="featuredProductsContainer">
+        </div>
+    </section>
+</main>
+{% endblock %}
+{% block script %}
+<script src="{% static 'js/index.js' %}"></script>
+<script src="{% static 'js/outro.js' %}"></script>
+{% endblock %}

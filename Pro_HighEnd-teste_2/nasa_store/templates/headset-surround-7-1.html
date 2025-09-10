@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProHighEnd - Mouse Gamer RGB</title>
+    <link rel="stylesheet" href="styless.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-area" onclick="window.location.href='index.html'">
+            <img src="img/logo.png" alt="Logo ProHighEnd" class="logo-img">
+            <h1>ProHighEnd</h1>
+        </div>
+        <form id="formPesquisa">
+            <input type="text" id="barraPesquisa" placeholder="Pesquisar produtos...">
+            <div id="suggestions"></div>
+        </form>
+        <div class="header-options">
+            <a href="produtos.html">Produtos</a>
+            <a href="perfil.html">Seu Perfil</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="#">Contato</a>
+        </div>
+    </header>
+  <main>
+    <section class="product-detail-container">
+      <div class="product-image-gallery">
+        <img src="img/headset1.jpg" alt="Headset Surround 7.1" class="main-image" id="mainProductImage">
+        <div class="thumbnail-gallery" id="thumbnailGallery">
+          <img src="img/headset1.jpg" alt="Headset Surround 7.1 - Vista 1" class="thumbnail active-thumb">
+          <img src="img/headset2.jpg" alt="Headset Surround 7.1 - Vista 2" class="thumbnail">
+        </div>
+      </div>
+      <div class="product-info">
+        <h2>Headset Surround 7.1</h2>
+        <p class="price">R$ 299,90</p>
+        <p>O Headset Surround 7.1 proporciona uma imersão sonora completa, permitindo que você ouça cada detalhe nos jogos e filmes. Confortável e com microfone de alta qualidade, é perfeito para longas sessões.</p>
+        <button class="buy-button">Adicionar ao Carrinho</button>
+
+        <div class="tabs-container">
+          <div class="tab-buttons">
+            <button class="tab-button active-tab" data-tab="description">Descrição</button>
+            <button class="tab-button" data-tab="specs">Especificações</button>
+            <button class="tab-button" data-tab="reviews">Avaliações</button>
+          </div>
+          <div id="tabContentDescription" class="tab-content">
+            <p>Experimente o áudio como nunca antes com o Headset Surround 7.1. Desenvolvido para gamers, ele oferece um som posicional preciso que te dará vantagem em qualquer jogo. Seus drivers de 50mm proporcionam graves potentes e agudos nítidos, enquanto o microfone retrátil com cancelamento de ruído garante comunicação clara com sua equipe.</p>
+            <p>O conforto é garantido por almofadas de espuma com memória e uma tiara ajustável, permitindo horas de uso sem desconforto. Ideal para quem busca performance e imersão total.</p>
+          </div>
+          <div id="tabContentSpecs" class="tab-content">
+            <ul>
+              <li>**Áudio:** Surround 7.1 virtual</li>
+              <li>**Conexão:** USB (plug-and-play)</li>
+              <li>**Drivers:** Neodímio de 50mm</li>
+              <li>**Microfone:** Retrátil, unidirecional com cancelamento de ruído</li>
+              <li>**Frequência de Resposta:** 20Hz - 20kHz</li>
+              <li>**Conforto:** Almofadas de espuma com memória e revestimento de couro sintético</li>
+              <li>**Cabo:** 2.2m trançado</li>
+              <li>**Controles:** No cabo (volume, mute de microfone)</li>
+            </ul>
+          </div>
+          <div id="tabContentReviews" class="tab-content">
+            <div class="review-item">
+              <h4>Lucas F. - ⭐⭐⭐⭐⭐</h4>
+              <p>Qualidade de áudio incrível e muito confortável! O surround 7.1 realmente faz a diferença nos jogos. Microfone limpo.</p>
+            </div>
+            <div class="review-item">
+              <h4>Fernanda B. - ⭐⭐⭐</h4>
+              <p>O som é bom para jogos, mas o microfone poderia ser um pouco melhor para chamadas de vídeo. Ainda assim, vale pelo custo-benefício.</p>
+            </div>
+            <div class="review-item">
+              <h4>Rafael M. - ⭐⭐⭐⭐⭐</h4>
+              <p>Imersão total! Consigo ouvir passos inimigos de longe. O conforto é excelente, mesmo usando por várias horas seguidas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <embed class="rodape" src="rodape.html" ></embed>
+  <script src="script.js"></script>
+</body>
+</html>

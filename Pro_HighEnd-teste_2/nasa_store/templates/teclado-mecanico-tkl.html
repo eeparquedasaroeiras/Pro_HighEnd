@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProHighEnd - Mouse Gamer RGB</title>
+    <link rel="stylesheet" href="styless.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-area" onclick="window.location.href='index.html'">
+            <img src="img/logo.png" alt="Logo ProHighEnd" class="logo-img">
+            <h1>ProHighEnd</h1>
+        </div>
+        <form id="formPesquisa">
+            <input type="text" id="barraPesquisa" placeholder="Pesquisar produtos...">
+            <div id="suggestions"></div>
+        </form>
+        <div class="header-options">
+            <a href="produtos.html">Produtos</a>
+            <a href="perfil.html">Seu Perfil</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="#">Contato</a>
+        </div>
+    </header>
+    <main class="product-detail-container">
+        <div class="product-image-gallery">
+            <img src="img/teclado-tkl-1.jpg" alt="Teclado Mecânico Gamer TKL RGB" class="main-image" id="mainProductImage">
+            <div class="thumbnail-gallery" id="thumbnailGallery">
+                <img src="img/teclado-tkl-1.jpg" alt="Teclado TKL Thumbnail 1" class="thumbnail active-thumb">
+                <img src="img/teclado-tkl-2.jpg" alt="Teclado TKL Thumbnail 2" class="thumbnail">
+            </div>
+        </div>
+        <div class="product-info">
+            <h2>Teclado Mecânico Gamer TKL RGB</h2>
+            <p class="price">R$ 499,90</p>
+            <p>Compacto e poderoso, este teclado mecânico TKL (Tenkeyless) com iluminação RGB é ideal para gamers que buscam espaço e performance.</p>
+            <button class="buy-button">Adicionar ao Carrinho</button>
+
+            <div class="tabs-container">
+                <div class="tab-buttons">
+                    <button class="tab-button active-tab" data-tab="description">Descrição</button>
+                    <button class="tab-button" data-tab="specs">Especificações</button>
+                    <button class="tab-button" data-tab="reviews">Avaliações</button>
+                </div>
+                <div class="tab-content" id="tabContentDescription">
+                    <p>O teclado mecânico TKL (sem numpad) é a escolha perfeita para gamers que precisam de mais espaço para o mouse. Com switches mecânicos de alta qualidade (Red, Blue, Brown - a ser especificado), ele oferece feedback tátil e sonoro preciso, e uma durabilidade incomparável.</p>
+                    <p>A iluminação RGB personalizável por tecla permite que você crie o ambiente perfeito para suas sessões de jogo, e o design robusto garante anos de uso intenso.</p>
+                </div>
+                <div class="tab-content" id="tabContentSpecs">
+                    <h3>Especificações Técnicas:</h3>
+                    <ul>
+                        <li>**Layout:** ABNT2 / US (dependendo do modelo)</li>
+                        <li>**Formato:** Tenkeyless (TKL)</li>
+                        <li>**Switches:** Mecânicos (Ex: Outemu Red, Gateron Brown)</li>
+                        <li>**Iluminação:** RGB por tecla, personalizável</li>
+                        <li>**Conexão:** USB 2.0/3.0</li>
+                        <li>**Anti-Ghosting:** N-Key Rollover (NKRO)</li>
+                        <li>**Durabilidade:** 50 milhões de cliques por tecla</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="tabContentReviews">
+                    <h3>Avaliações de Clientes:</h3>
+                    <div class="review-item">
+                        <h4>Mariana V. - ⭐⭐⭐⭐⭐</h4>
+                        <p>Adorei o espaço extra na mesa! O teclado é super responsivo e as luzes RGB são lindas.</p>
+                    </div>
+                    <div class="review-item">
+                        <h4>Lucas H. - ⭐⭐⭐⭐</h4>
+                        <p>Ótimo teclado, o som dos switches é agradável e a construção é sólida. Só senti falta de um software mais intuitivo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <embed class="rodape" src="rodape.html" ></embed>
+    <script src="script.js"></script>
+</body>
+</html>

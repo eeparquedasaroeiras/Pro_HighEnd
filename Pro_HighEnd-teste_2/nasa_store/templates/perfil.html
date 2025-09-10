@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<main class="login">
+    <div class="container" id="container">
+            <form>
+                <input type="text" placeholder="Digite seu usuário..." required>
+                <input type="password" placeholder="Digite sua senha..." required>
+                <button id="entrar">Entrar</button>
+            </form>
+    </div>
+</main>
+{% endblock %}
+{% block script %}
+<script src="{% static 'js/perfil.js' %}"></script>
+{% endblock %}

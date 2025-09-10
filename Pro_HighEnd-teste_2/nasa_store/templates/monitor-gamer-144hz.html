@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProHighEnd - Mouse Gamer RGB</title>
+    <link rel="stylesheet" href="styless.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-area" onclick="window.location.href='index.html'">
+            <img src="img/logo.png" alt="Logo ProHighEnd" class="logo-img">
+            <h1>ProHighEnd</h1>
+        </div>
+        <form id="formPesquisa">
+            <input type="text" id="barraPesquisa" placeholder="Pesquisar produtos...">
+            <div id="suggestions"></div>
+        </form>
+        <div class="header-options">
+            <a href="produtos.html">Produtos</a>
+            <a href="perfil.html">Seu Perfil</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="#">Contato</a>
+        </div>
+    </header>
+
+    <main class="product-detail-container">
+        <div class="product-image-gallery">
+            <img src="img/monitor-gamer-1.jpg" alt="Monitor Gamer 24 Polegadas 144Hz" class="main-image" id="mainProductImage">
+            <div class="thumbnail-gallery" id="thumbnailGallery">
+                <img src="img/monitor-gamer-1.jpg" alt="Monitor Thumbnail 1" class="thumbnail active-thumb">
+                <img src="img/monitor-gamer-2.jpg" alt="Monitor Thumbnail 2" class="thumbnail">
+            </div>
+        </div>
+        <div class="product-info">
+            <h2>Monitor Gamer 24 Polegadas 144Hz Full HD</h2>
+            <p class="price">R$ 1.199,90</p>
+            <p>Experimente jogos mais fluidos e imersivos com este monitor gamer de 144Hz, perfeito para vantagem competitiva.</p>
+            <button class="buy-button">Adicionar ao Carrinho</button>
+
+            <div class="tabs-container">
+                <div class="tab-buttons">
+                    <button class="tab-button active-tab" data-tab="description">Descrição</button>
+                    <button class="tab-button" data-tab="specs">Especificações</button>
+                    <button class="tab-button" data-tab="reviews">Avaliações</button>
+                </div>
+                <div class="tab-content" id="tabContentDescription">
+                    <p>Este monitor gamer de 24 polegadas com taxa de atualização de 144Hz e resolução Full HD (1920x1080) proporciona uma experiência de jogo incrivelmente suave e responsiva. O tempo de resposta de 1ms garante que você não perca nenhum frame, essencial para jogos competitivos.</p>
+                    <p>Com tecnologia de sincronização adaptativa (FreeSync/G-Sync Compatible), elimina rasgos na tela e stuttering, oferecendo visuais impecáveis.</p>
+                </div>
+                <div class="tab-content" id="tabContentSpecs">
+                    <h3>Especificações Técnicas:</h3>
+                    <ul>
+                        <li>**Tamanho:** 24 polegadas</li>
+                        <li>**Resolução:** Full HD (1920x1080)</li>
+                        <li>**Taxa de Atualização:** 144Hz</li>
+                        <li>**Tempo de Resposta:** 1ms (MPRT/GtG)</li>
+                        <li>**Tipo de Painel:** IPS ou VA (dependendo do modelo)</li>
+                        <li>**Conectividade:** DisplayPort, HDMI</li>
+                        <li>**Sincronização:** FreeSync / G-Sync Compatible</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="tabContentReviews">
+                    <h3>Avaliações de Clientes:</h3>
+                    <div class="review-item">
+                        <h4>Guilherme D. - ⭐⭐⭐⭐⭐</h4>
+                        <p>Excelente monitor, a diferença de 60Hz para 144Hz é absurda. Recomendo para quem joga FPS.</p>
+                    </div>
+                    <div class="review-item">
+                        <h4>Beatriz S. - ⭐⭐⭐⭐</h4>
+                        <p>Cores muito boas para um monitor gamer e a fluidez é top. Chegou perfeito!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <embed class="rodape" src="rodape.html" ></embed>
+    <script src="script.js"></script>
+</body>
+</html>

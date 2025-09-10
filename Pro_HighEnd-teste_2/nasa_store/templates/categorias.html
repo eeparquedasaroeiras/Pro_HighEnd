@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <main>
+        <section class="product-listing">
+            <h2>Categorias</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <a href="produtos.html?categoria=Cadeiras-Gamers">
+                        <img src="https://jogosgratis.online/wp-content/uploads/2021/11/1637386499_930_Esquenta-Black-Friday-10-cadeiras-gamer-mais-baratas-e-as.jpg" alt="Cadeiras Gamers">
+                        <h3>Cadeiras Gamers</h3>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="produtos.html?categoria=processadores">
+                        <img src="img/processadores.jpg" alt="Processadores">
+                        <h3>Processadores</h3>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="produtos.html?categoria=memoria-ram">
+                        <img src="img/memoria-ram.jpg" alt="Memória RAM">
+                        <h3>Memória RAM</h3>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="produtos.html?categoria=placas-mae">
+                        <img src="img/placas-mae.jpg" alt="Placas Mãe">
+                        <h3>Placas Mãe</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+{% endblock %}
+{% block script %}
+<embed class="rodape" src="rodape.html" ></embed>
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}
