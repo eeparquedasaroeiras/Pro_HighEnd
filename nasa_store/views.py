@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.http.response import HttpResponseRedirect
 from django.template import loader
+from django.shortcuts import render
 
 from .models import Produto, PedidoItem, Pedido
 
@@ -10,12 +11,7 @@ def login_view(request):
     return HttpResponse(template.render(context, request))
 
 def index(request):
-    latest_question_list = Produto.objects.all()
-    template = loader.get_template("index.html")
-    context = {
-        "latest_question_list": latest_question_list,
-    }
-    return HttpResponse(template.render(context, request))
+    return render(request, 'index.html')
 
 def perfil(request):
     template = loader.get_template("perfil.html")

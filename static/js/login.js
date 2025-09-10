@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if ((usuario === "admin" && senha === "admin") 
         || (usuario === "pedro" && senha === "1234")) {
             alert("Acesso aceito");
-            window.location.href = "index.html";
+            window.location.href = "/index"; // Se sua rota for path('index', views.index, name='index')
         } else {
             alert("Acesso negado");
         }
@@ -48,4 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
             duration: 0.2
         }); 
     };
+
+    document.getElementById("logo").addEventListener("click", function() {
+        window.location.href = "/index";
+    });
 });
