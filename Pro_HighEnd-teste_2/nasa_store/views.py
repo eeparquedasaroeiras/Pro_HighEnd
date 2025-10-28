@@ -4,9 +4,11 @@ from django.template import loader
 from django.shortcuts import render
 
 from .models import Produto, PedidoItem, Pedido
+from django.template import TemplateDoesNotExist
+from django.http import Http404
 
 def login_view(request):
-    template = loader.get_template("login.html")
+    template = loader.get_template("index.html")
     context = {}
     return HttpResponse(template.render(context, request))
 
@@ -57,3 +59,18 @@ def remover_carrinho(request, id):
     PedidoItem.objects.filter(id=id).delete()
 
     return HttpResponseRedirect("/carrinho/")
+
+
+def static_page(request, page):
+    """Render a template by filename if it exists in the templates folder.
+
+    This supports requests like /teclado-mecanico-pro.html which map to
+    the template 'teclado-mecanico-pro.html'. If the template is missing
+    a Http404 is raised so Django will show the normal 404 page (when
+    DEBUG=False) or the debug 404 (when DEBUG=True).
+    """
+    template_name = f"{page}.html"
+    try:
+        return render(request, template_name)
+    except TemplateDoesNotExist:
+        raise Http404()

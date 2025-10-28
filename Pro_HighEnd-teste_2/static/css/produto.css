@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+  box-sizing: border-box;
+}
+.container-ghost {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.ghost-left, .ghost-right {
+
+}
+.ghost-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}

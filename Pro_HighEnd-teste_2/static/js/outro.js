@@ -388,5 +388,6 @@ window.produtos = [
           pagina: "Hub-USB-4-Portas-2.0-Alta-Velocidade-Compatível-Windows-Mac.html",
           descricaoCurta: "Expanda suas conexões com 4 portas USB de alta velocidade, compatível com diversos dispositivos.",
           categoria: "Periféricos"
-        }
+        },
+        
     ];

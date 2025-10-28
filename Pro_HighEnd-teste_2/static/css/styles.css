@@ -815,7 +815,7 @@ header h1 {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    background-color:#f4ebef;
+    background-color:#ffffff;
     height: 300px;
     right: -300px;
     width: 300px;
@@ -825,12 +825,14 @@ header h1 {
 
 .MyCarr.ligado {
     right: 0;   
-    height: 570px;
+    padding: auto;
+    height: 700px;
 }
 .carr{
         margin-top: 3px;
         border-radius:30px;
-        border: #E05C9F solid ;
+        border: #000;
+        border: #ffffff solid ;
         position: fixed;
         z-index: 9000;
         right: 2%;
