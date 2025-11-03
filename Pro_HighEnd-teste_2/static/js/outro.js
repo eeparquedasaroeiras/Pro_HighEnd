@@ -388,6 +388,176 @@ window.produtos = [
           pagina: "Hub-USB-4-Portas-2.0-Alta-Velocidade-Compatível-Windows-Mac.html",
           descricaoCurta: "Expanda suas conexões com 4 portas USB de alta velocidade, compatível com diversos dispositivos.",
           categoria: "Periféricos"
-        },
+        },{
+    id: "monitor-gamer-27-curvo",
+    nome: "Monitor Gamer Curvo 27'' 165Hz - ASUS",
+    preco: "R$ 1.799,90",
+    imagens: [
+      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%23101920'/><rect x='40' y='300' width='720' height='120' rx='10' fill='%23000000' opacity='0.45'/><text x='50%' y='45%' font-family='Arial' font-size='36' fill='%23FFFFFF' text-anchor='middle'>Monitor Curvo 27\"</text><text x='50%' y='62%' font-family='Arial' font-size='18' fill='%23d0d0d0' text-anchor='middle'>ASUS • 165Hz • QHD</text></svg>",
+      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%230b1f2b'/><circle cx='650' cy='130' r='60' fill='%23ff8a00' opacity='0.12'/><text x='40' y='120' font-family='Arial' font-size='20' fill='%23ffffff'>Detalhe: Curvatura 1500R</text><text x='40' y='150' font-family='Arial' font-size='16' fill='%23cfcfcf'>Tempo de resposta 1ms</text></svg>"
+    ],
+    pagina: "monitor-gamer-27-curvo.html",
+    descricaoCurta: "Tela curva QHD 165Hz para jogatina fluida e imersiva.",
+    categoria: "Monitores",
+    detalhesTecnicos: {
+      tamanho: "27 polegadas",
+      tipoPainel: "VA Curvo",
+      resolucao: "QHD (2560x1440)",
+      taxaAtualizacao: "165Hz",
+      tempoResposta: "1ms"
+    },
+    reviews: [
+      { nome: "Rafael D.", nota: 5, comentario: "Cores e fluidez excelentes — ideal pra FPS." },
+      { nome: "Letícia P.", nota: 4, comentario: "Ótimo custo-benefício, curvatura agradável." }
+    ]
+  },
+
+  {
+    id: "mouse-gamer-ultrapreciso",
+    nome: "Mouse Gamer UltraPreciso - Logitech",
+    preco: "R$ 249,90",
+    imagens: [
+      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%2312171a'/><ellipse cx='500' cy='280' rx='180' ry='100' fill='%23ffffff' opacity='0.06'/><text x='50%' y='45%' font-family='Arial' font-size='32' fill='%23ffffff' text-anchor='middle'>Mouse UltraPreciso</text><text x='50%' y='62%' font-family='Arial' font-size='16' fill='%23d0d0d0' text-anchor='middle'>Logitech • 16000 DPI</text></svg>",
+      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%23081215'/><text x='40' y='80' font-family='Arial' font-size='18' fill='%23ffffff'>Sensor: PixArt PMW3389</text><text x='40' y='110' font-family='Arial' font-size='16' fill='%23cfcfcf'>Botões programáveis: 8</text></svg>"
+    ],
+    pagina: "mouse-gamer-ultrapreciso.html",
+    descricaoCurta: "Sensor de alta precisão e ergonomia pensada em longas sessões.",
+    categoria: "Periféricos",
+    detalhesTecnicos: {
+      sensor: "Óptico PixArt PMW3389",
+      dpiMaximo: "16000 DPI ajustável",
+      conexao: "USB / Cabo trançado",
+      botoesProgramaveis: "8",
+      iluminacao: "RGB"
+    },
+    reviews: [
+      { nome: "Gustavo N.", nota: 5, comentario: "Extremamente preciso e leve." },
+      { nome: "Amanda V.", nota: 4, comentario: "Confortável, software simples." }
+    ]
+  },
+
+  {
+    id: "headset-surround-7-1",
+    nome: "Headset Surround 7.1 - HyperX",
+    preco: "R$ 299,90",
+    imagens: [
+      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%230e1013'/><rect x='60' y='60' width='260' height='220' rx='18' fill='%23ffffff' opacity='0.06'/><text x='50%' y='48%' font-family='Arial' font-size='28' fill='%23fff' text-anchor='middle'>Headset 7.1</text><text x='50%' y='66%' font-family='Arial' font-size='14' fill='%23cfcfcf' text-anchor='middle'>HyperX • Surround Virtual</text></svg>",
+      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%23071212'/><text x='40' y='120' font-family='Arial' font-size='16' fill='%23fff'>Drivers 50mm Neodímio</text><text x='40' y='150' font-family='Arial' font-size='16' fill='%23d0d0d0'>Microfone retrátil omnidirecional</text></svg>"
+    ],
+    pagina: "headset-surround-7-1.html",
+    descricaoCurta: "Áudio imersivo para localizar passos e efeitos com precisão.",
+    categoria: "Periféricos",
+    detalhesTecnicos: {
+      som: "Virtual Surround 7.1",
+      drivers: "50mm Neodímio",
+      microfone: "Omnidirecional retrátil",
+      conexao: "USB"
+    },
+    reviews: [
+      { nome: "Pedro G.", nota: 5, comentario: "Som top, muito confortável." },
+      { nome: "Laura F.", nota: 4, comentario: "Microfone podia ser mais claro." }
+    ]
+  },
+
+  {
+    id: "cadeira-gamer-ultracomfort",
+    nome: "Cadeira Gamer UltraComfort - DXRacer",
+    preco: "R$ 1.199,90",
+    imagens: [
+      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%23101818'/><rect x='80' y='70' width='200' height='320' rx='18' fill='%23ffffff' opacity='0.05'/><text x='50%' y='45%' font-family='Arial' font-size='28' fill='%23fff' text-anchor='middle'>Cadeira UltraComfort</text><text x='50%' y='66%' font-family='Arial' font-size='14' fill='%23cfcfcf' text-anchor='middle'>DXRacer • Ajustes 4D</text></svg>",
+      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%230f1213'/><text x='40' y='120' font-family='Arial' font-size='16' fill='%23fff'>Material: Couro PU</text><text x='40' y='150' font-family='Arial' font-size='16' fill='%23d0d0d0'>Capacidade: até 150kg</text></svg>"
+    ],
+    pagina: "cadeira-gamer-ultracomfort.html",
+    descricaoCurta: "Suporte lombar e ajustes precisos pra longas maratonas de jogo.",
+    categoria: "Mobiliário Gamer",
+    detalhesTecnicos: {
+      material: "Couro PU de alta qualidade",
+      ajustes: "Altura, inclinação, apoio de braço 4D",
+      capacidade: "Até 150kg",
+      almofadas: "Lombar e pescoço"
+    },
+    reviews: [
+      { nome: "Felipe T.", nota: 5, comentario: "Adeus dor nas costas. Recomendo!" },
+      { nome: "Renata C.", nota: 4, comentario: "Preço alto, mas entrega conforto." }
+    ]
+  },
+
+  {
+    id: "rtx4070",
+    nome: "Placa de Vídeo NVIDIA GeForce RTX 4070 - ASUS TUF",
+    preco: "R$ 4.299,90",
+    imagens: [
+      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%230b0b0d'/><rect x='420' y='120' width='320' height='180' rx='16' fill='%23ffffff' opacity='0.04'/><text x='50%' y='45%' font-family='Arial' font-size='28' fill='%23fff' text-anchor='middle'>RTX 4070</text><text x='50%' y='64%' font-family='Arial' font-size='14' fill='%23cfcfcf' text-anchor='middle'>NVIDIA • 12GB GDDR6X</text></svg>",
+      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%23060b0f'/><text x='40' y='120' font-family='Arial' font-size='16' fill='%23fff'>CUDA Cores: 5888</text><text x='40' y='150' font-family='Arial' font-size='16' fill='%23d0d0d0'>Recomendado PSU 650W+</text></svg>"
+    ],
+    pagina: "rtx4070.html",
+    descricaoCurta: "Poder gráfico de nova geração para jogos e criação de conteúdo.",
+    categoria: "Placas de Vídeo",
+    detalhesTecnicos: {
+      marca: "NVIDIA / ASUS TUF",
+      memoria: "12GB GDDR6X",
+      interface: "PCI Express 4.0",
+      cudaCores: "5888",
+      boostClock: "Até 2.47 GHz",
+      saidasVideo: "DisplayPort 1.4a, HDMI 2.1",
+      consumo: "TGP 200W",
+      psuRecomendada: "650W ou superior"
+    },
+    reviews: [
+      { nome: "João S.", nota: 5, comentario: "Roda tudo no máximo, desempenho absurdo." },
+      { nome: "Maria L.", nota: 4, comentario: "Melhora gigante no FPS, mas caro." }
+    ]
+  },
+
+  {
+    id: "ryzen7-7800x3d",
+    nome: "Processador AMD Ryzen 7 7800X3D - AMD",
+    preco: "R$ 2.799,90",
+    imagens: [
+      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%23111613'/><rect x='60' y='70' width='200' height='160' rx='12' fill='%23ffffff' opacity='0.04'/><text x='50%' y='45%' font-family='Arial' font-size='28' fill='%23fff' text-anchor='middle'>Ryzen 7 7800X3D</text><text x='50%' y='64%' font-family='Arial' font-size='14' fill='%23cfcfcf' text-anchor='middle'>AMD • 8C / 16T • 3D V-Cache</text></svg>",
+      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%230d0f10'/><text x='40' y='120' font-family='Arial' font-size='16' fill='%23fff'>Frequência: 4.2 / 5.0 GHz</text><text x='40' y='150' font-family='Arial' font-size='16' fill='%23d0d0d0'>Soquete: AM5 • TDP 120W</text></svg>"
+    ],
+    pagina: "ryzen7-7800x3d.html",
+    descricaoCurta: "Desempenho gamer de ponta com cache 3D para FPS estáveis.",
+    categoria: "Processadores",
+    detalhesTecnicos: {
+      marca: "AMD",
+      nucleosThreads: "8 Cores / 16 Threads",
+      frequencia: "4.2 GHz / 5.0 GHz (Base/Boost)",
+      cacheL3: "96MB (com 3D V-Cache)",
+      soquete: "AMD AM5",
+      tdp: "120W",
+      graficosIntegrados: "Não"
+    },
+    reviews: [
+      { nome: "Carlos P.", nota: 5, comentario: "Melhora absurda de FPS em jogos." },
+      { nome: "Ana M.", nota: 5, comentario: "Instalação fácil, entrega performance." }
+    ]
+  },
+
+  {
+    id: "ssd-nvme-2tb",
+    nome: "SSD NVMe M.2 2TB - Samsung",
+    preco: "R$ 949,90",
+    imagens: [
+      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%230d0d0f'/><rect x='520' y='120' width='220' height='120' rx='8' fill='%23ffffff' opacity='0.06'/><text x='50%' y='46%' font-family='Arial' font-size='28' fill='%23fff' text-anchor='middle'>SSD NVMe 2TB</text><text x='50%' y='64%' font-family='Arial' font-size='14' fill='%23cfcfcf' text-anchor='middle'>Samsung • PCIe Gen4 x4</text></svg>",
+      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%230d0e10'/><text x='40' y='120' font-family='Arial' font-size='16' fill='%23fff'>Velocidade leitura: Até 7000 MB/s</text><text x='40' y='150' font-family='Arial' font-size='16' fill='%23d0d0d0'>Formato: M.2 2280 • Alta durabilidade</text></svg>"
+    ],
+    pagina: "ssd-nvme-2tb.html",
+    descricaoCurta: "Carregamento instantâneo de jogos e aplicativos.",
+    categoria: "Armazenamento",
+    detalhesTecnicos: {
+      capacidade: "2TB",
+      formato: "M.2 2280",
+      interface: "PCIe Gen4 x4",
+      velocidadeLeitura: "Até 7000 MB/s",
+      velocidadeEscrita: "Até 6000 MB/s",
+      durabilidade: "Alta (TBW elevado)"
+    },
+    reviews: [
+      { nome: "Fernando G.", nota: 5, comentario: "PC ficou rapidíssimo!" },
+      { nome: "Patrícia F.", nota: 5, comentario: "Instalação simples e desempenho top." }
+    ]
+  }
         
     ];

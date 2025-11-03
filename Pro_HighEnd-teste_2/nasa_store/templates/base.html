@@ -18,7 +18,6 @@
     </div>
     <header>
         <div class="logo-area">
-            <!-- Troque o href de "/" para "/index" -->
             <a href="/index">
                 <img id="imagem-produto" src="{% static 'img/logo.png' %}" alt="Logo ProHighEnd" class="logo-img">
             </a>
@@ -34,7 +33,7 @@
             <a href="#">Vender</a>
             <a href="#">Sobre nós</a>
         </div>
-        <!-- Carrinho completo -->
+        <!-- Carrinho -->
         <div id="MeuCarr" class="MyCarr">
             <div class="carrinho-aliem">
                 <h2>Meu Carrinho</h2>
@@ -47,11 +46,10 @@
                 <div class="cart-actions">
                     <button id="cart-clear" type="button">Esvaziar</button>
                     <button id="cart-checkout" type="button">Finalizar Compra</button>
-                    <button id="cart-clear" type="button">Esvaziar</button>
-                    <button id="cart-checkout" type="button">Finalizar Compra</button>
                 </div>
             </div>
         </div>
+        
     </header>
     {% block content %}{% endblock %}
     {% include "rodape.html" %}
