@@ -813,26 +813,27 @@ header h1 {
 /*carrinho*/
 .MyCarr {
     position: fixed;
-    top: 50%;
+    top: 53%;
     transform: translateY(-50%);
     background-color:#ffffff;
-    height: 300px;
-    right: -300px;
-    width: 300px;
-    z-index: 2000;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    height: 400px;
+    right: -400px;
+    width: 400px;
+    z-index: 10000;
 
 }
 
 .MyCarr.ligado {
     right: 0;   
-    padding: auto;
     height: 700px;
 }
 .carr{
         margin-top: 3px;
         border-radius:30px;
         border: #000;
-        border: #ffffff solid ;
+        border: #FF69B4 solid ;
         position: fixed;
         z-index: 9000;
         right: 2%;

@@ -7,11 +7,46 @@ window.produtos = window.produtos || [];
 // --- Seletores de elementos ---
 const imagem = document.getElementById("imagem-produto");
 const featuredContainer = document.getElementById("featuredProductsContainer");
+const featuredProducts = document.getElementById("featuredProductsContainer");
 const barraPesquisa = document.getElementById("barraPesquisa");
 const suggestions = document.getElementById("suggestions");
 const MeuCarr = document.getElementById("MeuCarr");
 const Carrinho = document.getElementById("carrinho");
+/////////////////////////////////////////////////////////
+function renderProdutos() {
+  if (!featuredProducts) return;
 
+  const lista = window.produtos || [];
+  if (!lista.length) {
+    featuredProducts.innerHTML = '<p class="empty">Nenhum produto disponível.</p>';
+    return;
+  }
+
+  featuredProducts.innerHTML = "";
+
+  lista.slice(0, 9).forEach((produto) => {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = `
+      <img src="${produto.imagens[0]}" alt="${produto.nome}" class="card-main-img" />
+      <h3>${produto.nome}</h3>
+      <p class="short-description">${produto.descricaoCurta}</p>
+      <p class="price">${produto.preco}</p>
+      <button class="btn-ver-detalhes" data-prod-id="${produto.id}">Ver Detalhes</button>
+    `;
+
+    // Clique no card (fora do botão) abre a overlay
+    card.addEventListener("click", (e) => {
+      if (!e.target.closest("button")) {
+        openGhostPage(produto);
+      }
+    });
+
+    featuredProducts.appendChild(card);
+  });
+}
+/////////////////////////////////////////////////////////
 // --- Renderiza produtos em destaque ---
 function renderProdutosEmDestaque() {
   if (!featuredContainer) return;
@@ -86,7 +121,7 @@ function openGhostPage(produto) {
         <h2>${produto.nome}</h2>
         <p class="ghost-price">${produto.preco}</p>
         <p class="ghost-desc">${produto.descricaoCurta}</p>
-        <button class="buy-button ghost-buy">Adicionar ao Carrinho</button>
+        <button class="buy-button ghost-buy">Adicionar</button>
       </div>
     </div>
   `;
@@ -109,11 +144,11 @@ function openGhostPage(produto) {
   // eventos do overlay
   const closeBtn = overlay.querySelector('.ghost-close');
   if (closeBtn) closeBtn.addEventListener('click', closeGhostPage);
-
+////////////////////////////////////////////////////////////////
   overlay.addEventListener('click', (e) => {
     if (e.target === overlay) closeGhostPage();
   });
-
+/////////////////////////////////////////////////////////////////
   overlay.querySelectorAll('.ghost-thumb').forEach(thumb => {
     thumb.addEventListener('click', (ev) => {
       const main = overlay.querySelector('.ghost-main-img');
@@ -205,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.addEventListener("click", (event) => {
       if (MeuCarr.classList.contains("ligado")) {
-        if (!MeuCarr.contains(event.target) && !Carrinho.contains(event.target)) {
+        if (!MeuCarr.contains(event.target) && !Carrinho.contains(event.target) && !document.getElementById('ghost-page-overlay')) {
           MeuCarr.classList.remove("ligado");
         }
       }
