@@ -561,3 +561,171 @@ window.produtos = [
   }
         
     ];
+
+    window.produts = [{
+    id: "teclado-mecanico-pro",
+    nome: "Teclado Mecânico Pro",
+    preco: "R$ 349,90",
+    imagens: ["/static/img/teclado1.jpg", "/static/img/teclado2.jpg", "/static/img/teclado3.jpg"],
+    pagina: "teclado-mecanico-pro.html",
+    descricaoCurta: "Teclado mecânico robusto para alta performance em jogos.",
+    categoria: "Periféricos",
+    detalhesTecnicos: {
+        switches: "Blue Switches Táteis",
+        layout: "ABNT2",
+        iluminacao: "Retroiluminação LED azul",
+        durabilidade: "50 milhões de cliques"
+    },
+    reviews: [
+        { nome: "João S.", nota: 5, comentario: "O melhor teclado que já tive, o clique é perfeito!" },
+        { nome: "Carla R.", nota: 4, comentario: "Muito bom, mas faz um pouco de barulho, como esperado de um mecânico." }
+    ]
+},
+{
+    id: "headset-surround-7-1",
+    nome: "Headset Surround 7.1",
+    preco: "R$ 299,90",
+    imagens: ["/static/img/headset1.jpg", "/static/img/headset2.jpg"],
+    pagina: "headset-surround-7-1.html",
+    descricaoCurta: "Áudio imersivo com som surround 7.1 para total imersão.",
+    categoria: "Periféricos",
+    detalhesTecnicos: {
+        som: "Virtual Surround 7.1",
+        drivers: "50mm Neodímio",
+        microfone: "Omnidirecional retrátil",
+        conexao: "USB"
+    },
+    reviews: [
+        { nome: "Pedro G.", nota: 5, comentario: "Qualidade de som excelente, ideal para identificar inimigos em jogos." },
+        { nome: "Laura F.", nota: 4, comentario: "Confortável, mas o microfone poderia ser um pouco mais claro." }
+    ]
+},
+{
+    id: "cadeira-gamer-ultracomfort",
+    nome: "Cadeira Gamer UltraComfort",
+    preco: "R$ 1.199,90",
+    imagens: ["/static/img/cadeira1.jpg", "/static/img/cadeira2.jpg", "/static/img/cadeira3.jpg"],
+    pagina: "cadeira-gamer-ultracomfort.html",
+    descricaoCurta: "Conforto extremo para longas sessões de jogo.",
+    categoria: "Mobiliário Gamer",
+    detalhesTecnicos: {
+        material: "Couro PU de alta qualidade",
+        ajustes: "Altura, inclinação, apoio de braço 4D",
+        capacidade: "Até 150kg",
+        almofadas: "Lombar e pescoço"
+    },
+    reviews: [
+        { nome: "Felipe T.", nota: 5, comentario: "Nunca mais tive dores nas costas jogando, incrível!" },
+        { nome: "Renata C.", nota: 4, comentario: "Um pouco cara, mas o conforto é inegável." }
+    ]
+},
+{
+    id: "rtx4070",
+    nome: "Placa de Vídeo NVIDIA GeForce RTX 4070",
+    preco: "R$ 4.299,90",
+    imagens: ["/static/img/rtx4070-1.jpg", "/static/img/rtx4070-2.jpg", "/static/img/rtx4070-3.jpg"],
+    pagina: "rtx4070.html",
+    descricaoCurta: "Eleve seu desempenho gamer e criativo com a RTX 4070, uma placa gráfica poderosa da nova geração.",
+    categoria: "Placas de Vídeo",
+    detalhesTecnicos: {
+        marca: "NVIDIA (Modelo de Referência / Parceiros)",
+        memoria: "12GB GDDR6X",
+        interface: "PCI Express 4.0",
+        cudaCores: "5888",
+        boostClock: "Até 2.47 GHz",
+        saidasVideo: "DisplayPort 1.4a, HDMI 2.1",
+        consumo: "TGP 200W",
+        psuRecomendada: "650W ou superior"
+    },
+    reviews: [
+        { nome: "João S.", nota: 5, comentario: "Placa excelente! Rodando todos os meus jogos no máximo sem problemas. Silenciosa e eficiente." },
+        { nome: "Maria L.", nota: 4, comentario: "Ótimo upgrade, percebi uma melhora gigantesca no desempenho. O preço ainda é salgado, mas vale a pena." }
+    ]
+},
+{
+    id: "ryzen7-7800x3d",
+    nome: "Processador AMD Ryzen 7 7800X3D",
+    preco: "R$ 2.799,90",
+    imagens: ["/static/img/ryzen7-7800x3d-1.jpg", "/static/img/ryzen7-7800x3d-2.jpg"],
+    pagina: "ryzen7-7800x3d.html",
+    descricaoCurta: "O melhor processador para jogos do mercado, com a tecnologia 3D V-Cache da AMD para performance inigualável.",
+    categoria: "Processadores",
+    detalhesTecnicos: {
+        marca: "AMD",
+        nucleosThreads: "8 Cores / 16 Threads",
+        frequencia: "4.2 GHz / 5.0 GHz (Base/Boost)",
+        cacheL3: "96MB (com 3D V-Cache)",
+        soquete: "AMD AM5",
+        tdp: "120W",
+        graficosIntegrados: "Não (requer placa de vídeo dedicada)"
+    },
+    reviews: [
+        { nome: "Carlos P.", nota: 5, comentario: "Simplesmente o melhor para jogos! Meus FPS dispararam. Vale cada centavo." },
+        { nome: "Ana M.", nota: 5, comentario: "Chegou rápido e superou minhas expectativas. Jogo liso demais!" }
+    ]
+},
+{
+    id: "memoria-ram-ddr5",
+    nome: "Memória RAM DDR5 32GB (2x16GB) 6000MHz",
+    preco: "R$ 799,90",
+    imagens: ["/static/img/ram-ddr5-1.jpg", "/static/img/ram-ddr5-2.jpg"],
+    pagina: "memoria-ram-ddr5.html",
+    descricaoCurta: "Otimize a performance do seu sistema com a velocidade e capacidade da memória DDR5.",
+    categoria: "Memória RAM",
+    detalhesTecnicos: {
+        capacidade: "32GB (2 x 16GB)",
+        tipo: "DDR5",
+        frequencia: "6000MHz",
+        latencia: "CL30",
+        voltagem: "1.35V",
+        formato: "UDIMM",
+        tecnologias: "Suporte a AMD EXPO / Intel XMP"
+    },
+    reviews: [
+        { nome: "Pedro R.", nota: 5, comentario: "Instalei fácil e senti uma melhora absurda no desempenho. Recomendo!" },
+        { nome: "Julia C.", nota: 4, comentario: "Memória top, mas certifique-se que sua placa-mãe é compatível com DDR5." }
+    ]
+},
+{
+    id: "ssd-nvme-2tb",
+    nome: "SSD NVMe M.2 2TB de Alta Velocidade",
+    preco: "R$ 949,90",
+    imagens: ["/static/img/ssd-nvme-1.jpg", "/static/img/ssd-nvme-2.jpg"],
+    pagina: "ssd-nvme-2tb.html",
+    descricaoCurta: "Carregue jogos e aplicativos em segundos com este SSD NVMe M.2 de 2TB.",
+    categoria: "Armazenamento",
+    detalhesTecnicos: {
+        capacidade: "2TB",
+        formato: "M.2 2280",
+        interface: "PCIe Gen4 x4",
+        velocidadeLeitura: "Até 7000 MB/s",
+        velocidadeEscrita: "Até 6000 MB/s",
+        durabilidade: "TBW alto para longa vida útil"
+    },
+    reviews: [
+        { nome: "Fernando G.", nota: 5, comentario: "Meu PC virou um foguete! Jogos abrem em 5 segundos. Impressionante." },
+        { nome: "Patrícia F.", nota: 5, comentario: "Chegou rápido e a instalação foi simples. Recomendo para quem quer velocidade." }
+    ]
+},
+{
+    id: "monitor-gamer-144hz",
+    nome: "Monitor Gamer 24 Polegadas 144Hz Full HD",
+    preco: "R$ 1.199,90",
+    imagens: ["/static/img/monitor-gamer-1.jpg", "/static/img/monitor-gamer-2.jpg"],
+    pagina: "monitor-gamer-144hz.html",
+    descricaoCurta: "Experimente jogos mais fluidos e imersivos com este monitor gamer de 144Hz.",
+    categoria: "Monitores",
+    detalhesTecnicos: {
+        tamanho: "24 polegadas",
+        resolucao: "Full HD (1920x1080)",
+        taxaAtualizacao: "144Hz",
+        tempoResposta: "1ms (MPRT/GtG)",
+        tipoPainel: "IPS ou VA",
+        conectividade: "DisplayPort, HDMI",
+        sincronizacao: "FreeSync / G-Sync Compatible"
+    },
+    reviews: [
+        { nome: "Guilherme D.", nota: 5, comentario: "Excelente monitor, a diferença de 60Hz para 144Hz é absurda. Recomendo para quem joga FPS." },
+        { nome: "Beatriz S.", nota: 4, comentario: "Cores muito boas para um monitor gamer e a fluidez é top. Chegou perfeito!" }
+    ]
+}]

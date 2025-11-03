@@ -7,7 +7,8 @@ window.produtos = window.produtos || [];
 // --- Seletores de elementos ---
 const imagem = document.getElementById("imagem-produto");
 const featuredContainer = document.getElementById("featuredProductsContainer");
-const featuredProducts = document.getElementById("featuredProductsContainer");
+// container para a lista completa (produtos.html)
+const featuredProducts = document.getElementById("featuredProductsTodos");
 const barraPesquisa = document.getElementById("barraPesquisa");
 const suggestions = document.getElementById("suggestions");
 const MeuCarr = document.getElementById("MeuCarr");
@@ -173,7 +174,7 @@ function renderProdutos() {
 
   featuredProducts.innerHTML = "";
 
-  lista.slice(0, 9).forEach((produto) => {
+  lista.slice(0, 90).forEach((produto) => {
     const card = document.createElement("div");
     card.className = "card";
 
@@ -208,7 +209,7 @@ function renderProdutosEmDestaque() {
 
   featuredContainer.innerHTML = "";
 
-  lista.slice(0, 90).forEach((produto) => {
+  lista.slice(0, 9).forEach((produto) => {
     const card = document.createElement("div");
     card.className = "card";
 
@@ -408,7 +409,10 @@ function renderSuggestions(query) {
 // --- Inicialização ---
 document.addEventListener("DOMContentLoaded", () => {
   setupDelegation();
+  // Render both lists if their containers exist. renderProdutos will no-op when
+  // `featuredProducts` is not present on the page.
   renderProdutosEmDestaque();
+  renderProdutos();
   // renderizar carrinho salvo
   renderCart();
 
