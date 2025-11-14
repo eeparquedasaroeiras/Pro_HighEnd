@@ -2,7 +2,8 @@
 {% load static %}
 
 {% block content %}
-
+<!-- botão de voltar de uma linha: usa a classe do Bulma para combinar com o site -->
+<button class="button is-ghost" onclick="if(history.length>1) history.back(); else window.location.href='/'" style="margin:0 0 1rem 0;">← Voltar</button>
     <main>
         <section class="featured-products">
             <h2>Nosso Catálogo</h2>

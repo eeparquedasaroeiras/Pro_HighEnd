@@ -2,6 +2,8 @@
 {% load static %}
 
 {% block content %}
+<button class="button is-ghost" onclick="if(history.length>1) history.back(); else window.location.href='/'" style="margin:0 0 1rem 0;">← Voltar</button>
+
 <main class="login">
     <div class="container" id="container">
             <form>

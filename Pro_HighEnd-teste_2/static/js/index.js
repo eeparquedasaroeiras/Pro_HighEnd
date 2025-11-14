@@ -416,6 +416,27 @@ document.addEventListener("DOMContentLoaded", () => {
   // renderizar carrinho salvo
   renderCart();
 
+  // Global delegation: garante que qualquer botão "Ver Detalhes" funcione em
+  // páginas onde não exista o container `featuredProductsContainer` (ex: produtos,
+  // categorias). O listener no container específico (setupDelegation) usa
+  // stopPropagation para evitar duplicação — aqui cobrimos os demais casos.
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn-ver-detalhes');
+    if (!btn) return;
+    e.stopPropagation();
+    const prodId = btn.dataset.prodId;
+    const produto = (window.produtos || []).find(p => String(p.id) === String(prodId));
+    if (produto) {
+      openGhostPage(produto);
+    } else {
+      // Se não houver produto no catálogo cliente, tenta navegar para a página
+      // do produto (se o botão tiver um href/data-href)
+      const href = btn.getAttribute('data-href') || btn.getAttribute('href');
+      if (href) window.location.href = href;
+      else console.warn('Produto não encontrado para id:', prodId);
+    }
+  });
+
   if (barraPesquisa) {
     barraPesquisa.addEventListener("input", (e) => {
       renderSuggestions(e.target.value.trim());
